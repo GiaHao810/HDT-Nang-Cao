@@ -1,14 +1,10 @@
 package Buoi2.simpleDuckApp.solution02.version2;
 
-public class MallardDuck extends Duck implements FlyAble, QuackAble{
-    @Override
-    public void fly() {
-        super.fly();
-    }
+public class MallardDuck extends Duck /*implements FlyAble, QuackAble*/ {
 
-    @Override
-    public void quack() {
-        super.quack();
+    public MallardDuck(){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
     }
     @Override
     public void display() {

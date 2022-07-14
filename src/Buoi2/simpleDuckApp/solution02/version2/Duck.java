@@ -1,8 +1,24 @@
 package Buoi2.simpleDuckApp.solution02.version2;
 
 public abstract class Duck {
-    public void quack() {
-        System.out.println("Quacking...");
+
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
+
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
+
+    public void performQuack(){
+        quackBehavior.quack();
+    }
+
+    public void performFly(){
+        flyBehavior.fly();
     }
 
     public  void swim() {
@@ -10,8 +26,4 @@ public abstract class Duck {
     }
 
     public abstract void display();
-
-    public void fly(){
-        System.out.println("Flying...");
-    }
 }

@@ -1,20 +1,13 @@
 package Buoi2.simpleDuckApp.solution02.version2;
 
-public class RedheadDuck extends Duck implements FlyAble, QuackAble{
+public class RedheadDuck extends Duck /*implements FlyAble, QuackAble*/{
 
-    @Override
-    public void fly() {
-        super.fly();
+    public RedheadDuck(){
+        setQuackBehavior(new Quack());
+        setFlyBehavior(new FlyWithWings());
     }
-
-    @Override
-    public void quack() {
-        super.quack();
-    }
-
     @Override
     public void display() {
         System.out.println("Im a real Red head Duck");        
     }
-    
 }

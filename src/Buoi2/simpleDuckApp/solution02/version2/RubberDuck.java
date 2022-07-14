@@ -1,12 +1,11 @@
 package Buoi2.simpleDuckApp.solution02.version2;
 
-public class RubberDuck extends Duck implements QuackAble{
+public class RubberDuck extends Duck /*implements QuackAble*/{
 
-    @Override
-    public void quack() {
-        super.quack();
+    public RubberDuck(){
+        quackBehavior = new Speak();
+        flyBehavior = new FlyNoWay();
     }
-
     @Override
     public void display() {
         System.out.println("Im a real rubber duck");
