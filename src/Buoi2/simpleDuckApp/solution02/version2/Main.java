@@ -2,10 +2,10 @@ package Buoi2.simpleDuckApp.solution02.version2;
 
 public class Main {
     public static void main(String[] args) {
-        Duck mallarDuck = new MallardDuck();
-        RubberDuck rubberDuck = new RubberDuck();
-        DecoyDuck decoyDuck = new DecoyDuck();
-        RedheadDuck redheadDuck = new RedheadDuck();
+        // Duck mallarDuck = new MallardDuck();
+        // RubberDuck rubberDuck = new RubberDuck();
+        // DecoyDuck decoyDuck = new DecoyDuck();
+        // RedheadDuck redheadDuck = new RedheadDuck();
 
 
         // System.out.println("Mallar Duck");

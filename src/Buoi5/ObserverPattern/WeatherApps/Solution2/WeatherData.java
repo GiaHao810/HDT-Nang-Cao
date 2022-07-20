@@ -1,4 +1,4 @@
-package Buoi5.ObserverPattern.WeatherApps.Solution1;
+package Buoi5.ObserverPattern.WeatherApps.Solution2;
 
 public class WeatherData {
     private float temp;
