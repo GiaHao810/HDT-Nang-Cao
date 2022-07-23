@@ -10,9 +10,9 @@ public class statisticDisplay implements Observer{
 	private int numReadings;
 	private WeatherData weatherData;
 
-	public statisticDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
-		weatherData.registerObserver(this);
+	public statisticDisplay(WeatherData weatherData2) {
+		this.weatherData = weatherData2;
+		weatherData2.registerObserver(this);
 	}
 
 	public void update(float temp, float humidity, float pressure) {

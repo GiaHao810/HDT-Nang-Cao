@@ -3,7 +3,7 @@ package Buoi5.ObserverPattern.WeatherApps.Solution2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherData implements Subject{
+public class WeatherData  implements Subject{
     private List<Observer> observers;
     private float temp;
     private float humidity;
@@ -30,7 +30,7 @@ public class WeatherData implements Subject{
     }
 
     public void measurementsChanged(){
-        notifyObserver();
+       //notifyObserver();
     }
 
     public void setMeasurements(float temperature, float humidity, float pressure){
